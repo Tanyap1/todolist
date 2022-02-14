@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3 - To Do List</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <body>
+  <div id="container">
+    <h1>My To do list</h1>
+    <h2 id="date"></h2>
+      <form id="add-list-item-form">
+        <input id="list-input" name="field" maxlength="300" type="text" required></input>
+        <button type="submit" id="submit-list-item" >ADD</button> 
+        <button id="delete-list-item" onclick="document.getElementById('list-input').value = ''">Delete Text</button>
+      </form>
+     <ul id="todo">
+       <li>Wake up </li>
+    </ul>
+  <footer class="footer">
+        <button class="btn" id="clear">Clear all</button>
+  </footer>
+  </div>
+  <script src="JavaScript.js"></script>
+</body>
+</html>
